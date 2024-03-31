@@ -6,7 +6,7 @@ import {
   GENERIC_ERROR,
   INVALID_CONFIG_ERROR,
   INVALID_GITHUB_USERNAME_ERROR,
-  setTooManyRequestError,
+  setTooManyRequestError
 } from '../constants/errors';
 import { HelmetProvider } from 'react-helmet-async';
 import '../assets/index.css';
@@ -39,7 +39,7 @@ import PublicationCard from './publication-card';
  */
 const GitProfile = ({ config }: { config: Config }) => {
   const [sanitizedConfig] = useState<SanitizedConfig | Record<string, never>>(
-    getSanitizedConfig(config),
+    getSanitizedConfig(config)
   );
   const [theme, setTheme] = useState<string>(DEFAULT_THEMES[0]);
   const [error, setError] = useState<CustomError | null>(null);
@@ -63,7 +63,7 @@ const GitProfile = ({ config }: { config: Config }) => {
         const url = `https://api.github.com/search/repositories?q=${query}&sort=${sanitizedConfig.projects.github.automatic.sortBy}&per_page=${sanitizedConfig.projects.github.automatic.limit}&type=Repositories`;
 
         const repoResponse = await axios.get(url, {
-          headers: { 'Content-Type': 'application/vnd.github.v3+json' },
+          headers: { 'Content-Type': 'application/vnd.github.v3+json' }
         });
         const repoData = repoResponse.data;
 
@@ -79,7 +79,7 @@ const GitProfile = ({ config }: { config: Config }) => {
         const url = `https://api.github.com/search/repositories?q=${repos}&type=Repositories`;
 
         const repoResponse = await axios.get(url, {
-          headers: { 'Content-Type': 'application/vnd.github.v3+json' },
+          headers: { 'Content-Type': 'application/vnd.github.v3+json' }
         });
         const repoData = repoResponse.data;
 
@@ -93,8 +93,8 @@ const GitProfile = ({ config }: { config: Config }) => {
       sanitizedConfig.projects.github.automatic.sortBy,
       sanitizedConfig.projects.github.automatic.limit,
       sanitizedConfig.projects.github.automatic.exclude.forks,
-      sanitizedConfig.projects.github.automatic.exclude.projects,
-    ],
+      sanitizedConfig.projects.github.automatic.exclude.projects
+    ]
   );
 
   const loadData = useCallback(async () => {
@@ -102,7 +102,7 @@ const GitProfile = ({ config }: { config: Config }) => {
       setLoading(true);
 
       const response = await axios.get(
-        `https://api.github.com/users/${sanitizedConfig.github.username}`,
+        `https://api.github.com/users/${sanitizedConfig.github.username}`
       );
       const data = response.data;
 
@@ -111,7 +111,7 @@ const GitProfile = ({ config }: { config: Config }) => {
         name: data.name || ' ',
         bio: data.bio || '',
         location: data.location || '',
-        company: data.company || '',
+        company: data.company || ''
       });
 
       if (!sanitizedConfig.projects.github.display) {
@@ -127,7 +127,7 @@ const GitProfile = ({ config }: { config: Config }) => {
   }, [
     sanitizedConfig.github.username,
     sanitizedConfig.projects.github.display,
-    getGithubProjects,
+    getGithubProjects
   ]);
 
   useEffect(() => {
@@ -153,7 +153,7 @@ const GitProfile = ({ config }: { config: Config }) => {
         const reset = formatDistance(
           new Date(error.response?.headers?.['x-ratelimit-reset'] * 1000),
           new Date(),
-          { addSuffix: true },
+          { addSuffix: true }
         );
 
         if (typeof error.response?.status === 'number') {
@@ -224,12 +224,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                         skills={sanitizedConfig.skills}
                       />
                     )}
-                    {sanitizedConfig.experiences.length !== 0 && (
-                      <ExperienceCard
-                        loading={loading}
-                        experiences={sanitizedConfig.experiences}
-                      />
-                    )}
                     {sanitizedConfig.certifications.length !== 0 && (
                       <CertificationCard
                         loading={loading}
@@ -246,6 +240,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                 </div>
                 <div className="lg:col-span-2 col-span-1">
                   <div className="grid grid-cols-1 gap-6">
+                    {sanitizedConfig.experiences.length !== 0 && (
+                      <ExperienceCard
+                        loading={loading}
+                        experiences={sanitizedConfig.experiences}
+                      />
+                    )}
                     {sanitizedConfig.projects.github.display && (
                       <GithubProjectCard
                         header={sanitizedConfig.projects.github.header}
@@ -262,8 +262,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                         publications={sanitizedConfig.publications}
                       />
                     )}
-                    {sanitizedConfig.projects.external.projects.length !==
-                      0 && (
+                    {sanitizedConfig.projects.external.projects.length !== 0 && (
                       <ExternalProjectCard
                         loading={loading}
                         header={sanitizedConfig.projects.external.header}

@@ -29,14 +29,14 @@ const CONFIG = {
       }
     },
     external: {
-      header: 'My Projects',
+      header: 'Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: []
     }
   },
   seo: {
-    title: 'Portfolio of Mo Sorkhpar',
-    description: '',
+    title: 'Mo Sorkhpar: Senior Software Engineer with expertise in Java, Spring Boot, Microservices, and Python',
+    description: 'Explore the portfolio of Mo Sorkhpar, a Dallas-based Senior Software Engineer with over 8 years of expertise in Java, Python, Spring Framework, and cloud technologies. A proud holder of a Master\'s in Computer Science from Indiana State University, Mo has contributed to innovative projects leveraging his diverse tech stack to solve complex challenges.',
     imageURL: ''
   },
   social: {
@@ -94,39 +94,77 @@ const CONFIG = {
   ],
   experiences: [
     {
+      company: 'Indiana State University',
+      position: 'Graduate Research Assistant',
+      from: '08/2022',
+      to: '05/2024',
+      companyLink: 'https://cs.indstate.edu',
+      achievements: [
+        'Spearheaded the integration of Wikidata and Wikipedia dumps to create a comprehensive dataset for graph entity summarization, utilizing Java, Python, Neo4j, Linux, and AWS to build a new standard dataset for machine learning research in graph summarization.',
+        'Advanced an RGCN-based entity summarization algorithm in Knowledge Graphs with PyTorch and Optuna.',
+        'Developed a Mixed Integer solver for the optimal vertex ordering problem in bipartite graphs, applying Python, NetworkX, and PostgreSQL, translating complex models into practical solutions.'
+      ]
+    },
+    {
       company: 'Intellias',
       position: 'Senior Software Engineer',
       from: '10/2021',
       to: '07/2022',
-      companyLink: 'https://intellias.com'
+      companyLink: 'https://intellias.com',
+      achievements: [
+        'Developed a reactive microservices-based sales platform for a German telecom’s ePOS system using Kotlin, Spring, MongoDB, Oracle DB, Kubernetes, and Apache Wicket, enhancing operational efficiency across 3,000 retail branches.',
+        'Implemented a cost-effective contract service solution, replacing an expensive licensing model with an open-source tool. This yielded an annual savings of $10,000 and maintained system adaptability for future infrastructure changes.',
+        'Orchestrated a team of 8 in a scrum-based environment, collaborating with over 70 developers.'
+      ]
     },
     {
       company: 'Routetitan',
       position: 'Senior Software Engineer',
       from: '04/2021',
       to: '10/2021',
-      companyLink: 'https://routetitan.com'
+      companyLink: 'https://routetitan.com',
+      achievements: [
+        'Spearheaded the back-end development of a Route Optimizer application for DHL Netherlands, enhancing delivery efficiency by solving up to 5000 vehicle routing problems daily with Java, Quarkus, PostgreSQL, MongoDB, Stripe API, and Google-OR tools. Achieved a groundbreaking improvement in system performance, reducing load times from 1800ms to 200ms.',
+        'Persuaded the team to adopt a strategic pivot to a Product-as-a-Service (PaaS) model, fostering Routetitan’s growth by optimizing resource allocation, aligning business processes with market demands, and establishing an innovative and competitive path.',
+        ' Led the deployment architecture overhaul using Terraform and Gitlab CI, integrating Hetzner-Cloud, GCP, and AWS, which optimized deployment processes and significantly cut operational costs.'
+      ]
     },
     {
       company: 'Devolon',
       position: 'Software Developer',
       from: '02/2020',
       to: '02/2021',
-      companyLink: 'https://www.devolon.fi'
+      companyLink: 'https://www.devolon.fi',
+      achievements: [
+        'Engineered the PCKT children’s money management application, empowering parents with tools to monitor and control their children’s spending. Integral in leveraging ISO-8583 and jPOS for secure banking communications, facilitating seamless transaction processing.',
+        'Initiated a Grafana and Prometheus-based monitoring system, which reduced customer support calls by 80% and boosted operational efficiency by enabling rapid detection and resolution of system issues.',
+        'Collaborated within a diverse, scrum-based international team, focusing on API services and back-office management.'
+      ]
     },
     {
       company: 'Farazpardazan',
       position: 'Senior Software Engineer',
       from: '12/2016',
       to: '01/2020',
-      companyLink: 'https://www.farazpardazan.com'
+      companyLink: 'https://www.farazpardazan.com',
+      achievements: [
+        'Delivered the Hamrahcard Payment Assistant application, overseeing its growth to over 12 million users and managing 2 million daily financial transactions. This marked a significant contribution to the company’s portfolio and user base expansion.',
+        'Enhanced SQL query performance, achieving a 90% improvement in report generation speed and reduced execution times for complex queries, boosting system responsiveness and user satisfaction.',
+        'Implemented and maintained a robust suite of internal services supporting continuous integration and continuous delivery pipelines, including Jira, Gitlab, Gitlab CI/CD, Nginx, SonarQube, Artifactory, and Nexus, laying the foundation for agile development practices.',
+        'Directed the development of a Personal Financial Management application as Product Owner, overseeing a scrum team of 6. Achieved a milestone of 500K active users by enhancing user engagement and product features.',
+        'Streamlined the software development life cycle by integrating System Requirements Specifications (SRS), wireframes, UI designs, and API contracts, significantly improving efficiency and clarity in production processes.'
+      ]
     },
     {
       company: 'PartGames Studio',
       position: 'Java Back-end Developer',
       from: '01/2016',
       to: '11/2016',
-      companyLink: 'https://www.partgames.com'
+      companyLink: 'https://www.partgames.com',
+      achievements: [
+        'Crafted a high-performance back-end service for an online physics game with 230K players, utilizing Java, Spring, MySQL, Redis, Vaadin, and WebSocket. Introduced comprehensive features, including real-time interactions, payment management, and a versatile back-office system for user and parameter management.',
+        'Created and commercialized a scalable leaderboard management service, handling up to 5,000 requests per minute for 7 multiplayer games. This innovation extended beyond studio use, offering an API to external services and marking a significant contribution to the studio’s technological portfolio.'
+      ]
     }
   ],
   certifications: [],
