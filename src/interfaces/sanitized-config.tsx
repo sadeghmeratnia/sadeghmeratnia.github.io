@@ -42,6 +42,11 @@ export interface SanitizedSEO {
   imageURL?: string;
 }
 
+export interface GoogleScholar {
+  user?: string;
+  name?: string;
+}
+
 export interface SanitizedSocial {
   linkedin?: string;
   twitter?: string;
