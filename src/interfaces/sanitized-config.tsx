@@ -42,11 +42,17 @@ export interface SanitizedSEO {
   imageURL?: string;
 }
 
+export interface GoogleScholar {
+  user?: string;
+  name?: string;
+}
+
 export interface SanitizedSocial {
   linkedin?: string;
   twitter?: string;
   mastodon?: string;
   researchGate?: string;
+  googleScholar?: GoogleScholar;
   facebook?: string;
   instagram?: string;
   youtube?: string;

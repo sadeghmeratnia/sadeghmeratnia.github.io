@@ -1,3 +1,5 @@
+import { GoogleScholar } from './src/interfaces/sanitized-config.tsx';
+
 interface Github {
   /**
    * GitHub org/user name
@@ -127,6 +129,10 @@ interface Social {
    */
   researchGate?: string;
 
+  /**
+   * Google Scholar
+   */
+  googleScholar?: GoogleScholar;
   /**
    * Facebook
    */
