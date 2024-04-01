@@ -158,7 +158,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.googleScholar && (
                 <ListItem
                   icon={<SiGooglescholar />}
-                  title="ResearchGate:"
+                  title="GoogleScholar:"
                   value={social.googleScholar.name}
                   link={`https://scholar.google.com/citations?user=${social.googleScholar.user}`}
                 />

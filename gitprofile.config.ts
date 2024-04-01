@@ -43,7 +43,7 @@ const CONFIG = {
     linkedin: 'msorkhpar',
     twitter: '',
     mastodon: '',
-    researchGate: 'Mo-Sorkhpar',
+    researchGate: '',
     googleScholar: { name: 'Mo Sorkhpar', user: '1ZQ9Z6oAAAAJ' },
     facebook: '',
     instagram: '',
