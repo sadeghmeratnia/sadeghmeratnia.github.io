@@ -2,9 +2,9 @@ import { MdLocationOn } from 'react-icons/md';
 import {
   AiFillGithub,
   AiFillInstagram,
-  AiFillMediumSquare,
+  AiFillMediumSquare
 } from 'react-icons/ai';
-import { SiTwitter, SiResearchgate } from 'react-icons/si';
+import { SiTwitter, SiResearchgate, SiGooglescholar } from 'react-icons/si';
 import { CgDribbble } from 'react-icons/cg';
 import { RiPhoneFill, RiMailFill } from 'react-icons/ri';
 import { Fragment } from 'react';
@@ -19,13 +19,13 @@ import {
   FaStackOverflow,
   FaTelegram,
   FaLinkedin,
-  FaYoutube,
+  FaYoutube
 } from 'react-icons/fa';
 import { skeleton } from '../../utils';
 import { Profile } from '../../interfaces/profile';
 import {
   SanitizedGithub,
-  SanitizedSocial,
+  SanitizedSocial
 } from '../../interfaces/sanitized-config';
 
 type Props = {
@@ -45,7 +45,7 @@ const companyLink = (company: string): string => {
 
 const getFormattedMastodonValue = (
   mastodonValue: string,
-  isLink: boolean,
+  isLink: boolean
 ): string => {
   const [username, server] = mastodonValue.split('@');
 
@@ -78,7 +78,7 @@ const ListItem: React.FC<{
           skeleton ? 'flex-grow' : ''
         } text-sm font-normal text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
         style={{
-          wordBreak: 'break-word',
+          wordBreak: 'break-word'
         }}
       >
         {value}
@@ -107,7 +107,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
           icon={skeleton({ widthCls: 'w-4', heightCls: 'h-4' })}
           title={skeleton({ widthCls: 'w-24', heightCls: 'h-4' })}
           value={skeleton({ widthCls: 'w-full', heightCls: 'h-4' })}
-        />,
+        />
       );
     }
 
@@ -153,6 +153,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="ResearchGate:"
                   value={social.researchGate}
                   link={`https://www.researchgate.net/profile/${social.researchGate}`}
+                />
+              )}
+              {social?.googleScholar && (
+                <ListItem
+                  icon={<SiGooglescholar />}
+                  title="ResearchGate:"
+                  value={social.googleScholar.name}
+                  link={`https://scholar.google.com/citations?user=${social.googleScholar.user}`}
                 />
               )}
               {social?.twitter && (

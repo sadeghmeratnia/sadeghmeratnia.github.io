@@ -106,6 +106,11 @@ interface SEO {
   imageURL?: string;
 }
 
+interface GoogleScholar {
+  name?: string;
+  user?: string;
+}
+
 interface Social {
   /**
    * LinkedIn
@@ -126,6 +131,11 @@ interface Social {
    * ResearchGate username
    */
   researchGate?: string;
+
+  /**
+   * GoogleScholar display name and user
+   */
+  googleScholar?: GoogleScholar;
 
   /**
    * Facebook

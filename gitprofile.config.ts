@@ -44,6 +44,7 @@ const CONFIG = {
     twitter: '',
     mastodon: '',
     researchGate: 'Mo-Sorkhpar',
+    googleScholar: { name: 'Mo Sorkhpar', user: '1ZQ9Z6oAAAAJ' },
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'

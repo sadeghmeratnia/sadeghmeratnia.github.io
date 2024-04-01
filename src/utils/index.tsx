@@ -4,14 +4,14 @@ import { DEFAULT_THEMES } from '../constants/default-themes';
 import {
   SanitizedConfig,
   SanitizedHotjar,
-  SanitizedThemeConfig,
+  SanitizedThemeConfig
 } from '../interfaces/sanitized-config';
 import { hotjar } from 'react-hotjar';
 import colors from '../data/colors.json';
 
 export const isDarkishTheme = (appliedTheme: string): boolean => {
   return ['dark', 'halloween', 'forest', 'black', 'luxury', 'dracula'].includes(
-    appliedTheme,
+    appliedTheme
   );
 };
 
@@ -24,12 +24,12 @@ type Colors = {
 };
 
 export const getSanitizedConfig = (
-  config: Config,
+  config: Config
 ): SanitizedConfig | Record<string, never> => {
   try {
     return {
       github: {
-        username: config.github.username,
+        username: config.github.username
       },
       projects: {
         github: {
@@ -43,22 +43,22 @@ export const getSanitizedConfig = (
               forks:
                 config?.projects?.github?.automatic?.exclude?.forks || false,
               projects:
-                config?.projects?.github?.automatic?.exclude?.projects || [],
-            },
+                config?.projects?.github?.automatic?.exclude?.projects || []
+            }
           },
           manual: {
-            projects: config?.projects?.github?.manual?.projects || [],
-          },
+            projects: config?.projects?.github?.manual?.projects || []
+          }
         },
         external: {
           header: config?.projects?.external?.header || 'My Projects',
-          projects: config?.projects?.external?.projects || [],
-        },
+          projects: config?.projects?.external?.projects || []
+        }
       },
       seo: {
         title: config?.seo?.title,
         description: config?.seo?.description,
-        imageURL: config?.seo?.imageURL,
+        imageURL: config?.seo?.imageURL
       },
       social: {
         linkedin: config?.social?.linkedin,
@@ -78,9 +78,10 @@ export const getSanitizedConfig = (
         skype: config?.social?.skype,
         telegram: config?.social?.telegram,
         researchGate: config?.social?.researchGate,
+        googleScholar: config?.social?.googleScholar
       },
       resume: {
-        fileUrl: config?.resume?.fileUrl || '',
+        fileUrl: config?.resume?.fileUrl || ''
       },
       skills: config?.skills || [],
       experiences:
@@ -89,30 +90,30 @@ export const getSanitizedConfig = (
             experience.company ||
             experience.position ||
             experience.from ||
-            experience.to,
+            experience.to
         ) || [],
       certifications:
         config?.certifications?.filter(
           (certification) =>
-            certification.year || certification.name || certification.body,
+            certification.year || certification.name || certification.body
         ) || [],
       educations:
         config?.educations?.filter(
-          (item) => item.institution || item.degree || item.from || item.to,
+          (item) => item.institution || item.degree || item.from || item.to
         ) || [],
       publications: config?.publications?.filter((item) => item.title) || [],
       googleAnalytics: {
-        id: config?.googleAnalytics?.id,
+        id: config?.googleAnalytics?.id
       },
       hotjar: {
         id: config?.hotjar?.id,
-        snippetVersion: config?.hotjar?.snippetVersion || 6,
+        snippetVersion: config?.hotjar?.snippetVersion || 6
       },
       blog: {
         username: config?.blog?.username || '',
         source: config?.blog?.source || 'dev',
         limit: config?.blog?.limit || 5,
-        display: !!config?.blog?.username && !!config?.blog?.source,
+        display: !!config?.blog?.username && !!config?.blog?.source
       },
       themeConfig: {
         defaultTheme: config?.themeConfig?.defaultTheme || DEFAULT_THEMES[0],
@@ -142,11 +143,11 @@ export const getSanitizedConfig = (
             DEFAULT_CUSTOM_THEME['--rounded-box'],
           '--rounded-btn':
             config?.themeConfig?.customTheme?.['--rounded-btn'] ||
-            DEFAULT_CUSTOM_THEME['--rounded-btn'],
-        },
+            DEFAULT_CUSTOM_THEME['--rounded-btn']
+        }
       },
       footer: config?.footer,
-      enablePWA: config?.enablePWA ?? true,
+      enablePWA: config?.enablePWA ?? true
     };
   } catch (error) {
     return {};
@@ -171,7 +172,7 @@ export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
 
   if (themeConfig.respectPrefersColorScheme && !themeConfig.disableSwitch) {
     return typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
+    window.matchMedia('(prefers-color-scheme: dark)').matches
       ? 'dark'
       : themeConfig.defaultTheme;
   }
@@ -180,12 +181,12 @@ export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
 };
 
 export const skeleton = ({
-  widthCls = null,
-  heightCls = null,
-  style = {} as React.CSSProperties,
-  shape = 'rounded-full',
-  className = null,
-}: {
+                           widthCls = null,
+                           heightCls = null,
+                           style = {} as React.CSSProperties,
+                           shape = 'rounded-full',
+                           className = null
+                         }: {
   widthCls?: string | null;
   heightCls?: string | null;
   style?: React.CSSProperties;
@@ -221,7 +222,7 @@ export const ga = {
     } catch (error) {
       console.error(error);
     }
-  },
+  }
 };
 
 export const getLanguageColor = (language: string): string => {
