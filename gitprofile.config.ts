@@ -44,7 +44,7 @@ const CONFIG = {
     twitter: '',
     mastodon: '',
     researchGate: '',
-    googleScholar: { name: 'Mo Sorkhpar', user: '1M5LFmIAAAAJ'  },
+    googleScholar: { name: 'Mo Sorkhpar', user: '1M5LFmIAAAAJ' },
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
@@ -93,6 +93,10 @@ const CONFIG = {
     'Jira',
     'Git'
   ],
+  banner: {
+    imageURL: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar/main/Who-I-am-large.gif',
+    name: 'Mo Sorkhpar Portfolio',
+  },
   experiences: [
     {
       company: 'Indiana State University',

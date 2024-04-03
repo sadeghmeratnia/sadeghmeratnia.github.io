@@ -72,6 +72,11 @@ export interface SanitizedResume {
   fileUrl?: string;
 }
 
+export interface Banner {
+  imageURL?: string;
+  name?: string;
+}
+
 export interface SanitizedExperience {
   company?: string;
   position?: string;
@@ -146,6 +151,7 @@ export interface SanitizedConfig {
   social: SanitizedSocial;
   resume: SanitizedResume;
   skills: Array<string>;
+  banner: Banner;
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;

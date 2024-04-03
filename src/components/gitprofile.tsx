@@ -30,6 +30,7 @@ import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
+import BannerCard from './banner-card';
 
 /**
  * Renders the GitProfile component.
@@ -239,6 +240,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                   </div>
                 </div>
                 <div className="lg:col-span-6 col-span-1">
+                  <div className="grid grid-cols-1 gap-6">
+                    <BannerCard
+                      banner={sanitizedConfig.banner}
+                      loading={loading}
+                    />
+                  </div>
                   <div className="grid grid-cols-1 gap-6">
                     {sanitizedConfig.experiences.length !== 0 && (
                       <ExperienceCard

@@ -210,6 +210,11 @@ interface Resume {
   fileUrl?: string;
 }
 
+interface Banner {
+  imageURL?: string;
+  name?: string;
+}
+
 interface Experience {
   company?: string;
   position?: string;
@@ -378,6 +383,11 @@ interface Config {
    * Skill list
    */
   skills?: Array<string>;
+
+  /**
+   * Banner config
+   */
+  banner?: Banner;
 
   /**
    * Experience list
