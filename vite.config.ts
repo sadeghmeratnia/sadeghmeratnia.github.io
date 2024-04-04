@@ -15,6 +15,9 @@ export default defineConfig({
           metaTitle: CONFIG.seo.title,
           metaDescription: CONFIG.seo.description,
           metaImageURL: CONFIG.seo.imageURL,
+          schemaScript: `<script type="application/ld+json">` +
+            JSON.stringify(CONFIG.seo.schema)+
+            `</script>`,
         },
       },
     }),
