@@ -64,11 +64,12 @@ const CONFIG = {
         '@type': 'EducationalOrganization',
         name: 'Indiana State University',
       },
-      url: 'http://msorkhpar.github.io',
+      url: 'https://sorkhpar.dev',
       image: 'https://avatars.githubusercontent.com/u/5176686?v=4',
       sameAs: [
         'http://www.linkedin.com/in/msorkhpar',
         'http://www.github.com/msorkhpar',
+        'http://msorkhpar.github.io/',
         'https://scholar.google.com/citations?user=1M5LFmIAAAAJ',
         'https://orcid.org/0009-0006-2856-9225',
         'https://www.researchgate.net/profile/Mo-Sorkhpar',
@@ -104,7 +105,7 @@ const CONFIG = {
     email: 'msorkhpar@outlook.com',
   },
   resume: {
-    fileUrl: 'https://msorkhpar.github.io/Mo-Sorkhpar-Resume.pdf' // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://sorkhpar.dev/Mo-Sorkhpar-Resume.pdf' // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Java',
