@@ -104,7 +104,7 @@ const CONFIG = {
     email: 'msorkhpar@outlook.com',
   },
   resume: {
-    fileUrl: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar.github.io/main/Mo-Sorkhpar-Resume.pdf' // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://msorkhpar.github.io/Mo-Sorkhpar-Resume.pdf' // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Java',
