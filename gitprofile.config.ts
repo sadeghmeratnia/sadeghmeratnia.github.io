@@ -37,7 +37,7 @@ const CONFIG = {
   seo: {
     title: 'Mohammad \'Mo\' Sorkhpar (msorkhpar), a Senior Software Engineer based in Dallas.',
     description: 'Explore the portfolio of Mo Sorkhpar, a Dallas-based Senior Software Engineer with over 8 years of expertise in Java, Python, Spring Framework, and cloud technologies. A proud holder of a Master\'s in Computer Science from Indiana State University, Mo has contributed to innovative projects leveraging his diverse tech stack to solve complex challenges.',
-    imageURL: 'https://avatars.githubusercontent.com/u/5176686?v=4',
+    imageURL: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar/main/Who-I-am.png',
     schema: {
       '@context': 'http://schema.org',
       '@type': 'Person',
@@ -65,7 +65,7 @@ const CONFIG = {
         name: 'Indiana State University',
       },
       url: 'https://sorkhpar.dev',
-      image: 'https://avatars.githubusercontent.com/u/5176686?v=4',
+      image: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar/main/Who-I-am.png',
       sameAs: [
         'http://www.linkedin.com/in/msorkhpar',
         'http://www.github.com/msorkhpar',
@@ -162,7 +162,7 @@ const CONFIG = {
       to: '07/2022',
       companyLink: 'https://intellias.com',
       achievements: [
-        'Developed a reactive microservices-based sales platform for a German telecom’s ePOS system using Kotlin, Spring, MongoDB, Oracle DB, Kubernetes, and Apache Wicket, enhancing operational efficiency across 3,000 retail branches.',
+        'Developed a reactive microservices-based sales platform for a telecom’s ePOS system using Kotlin, Spring, MongoDB, Oracle DB, Kubernetes, and Apache Wicket, enhancing operational efficiency across 3,000 retail branches.',
         'Implemented a cost-effective contract service solution, replacing an expensive licensing model with an open-source tool. This yielded an annual savings of $10,000 and maintained system adaptability for future infrastructure changes.',
         'Orchestrated a team of 8 in a scrum-based environment, collaborating with over 70 developers.',
       ],
