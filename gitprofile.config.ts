@@ -208,7 +208,7 @@ const CONFIG = {
     {
       company: 'PartGames Studio',
       position: 'Java Back-end Developer',
-      from: '01/2016',
+      from: '01/2015',
       to: '11/2016',
       companyLink: 'https://www.partgames.com',
       achievements: [
