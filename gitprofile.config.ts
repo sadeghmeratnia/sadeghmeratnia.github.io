@@ -170,26 +170,14 @@ const CONFIG = {
     {
       company: 'Routetitan',
       position: 'Senior Software Engineer',
-      from: '04/2021',
+      from: '03/2020',
       to: '10/2021',
       companyLink: 'https://routetitan.com',
       achievements: [
-        'Spearheaded the back-end development of a Route Optimizer application for DHL Netherlands, enhancing delivery efficiency by solving up to 5000 vehicle routing problems daily with Java, Quarkus, PostgreSQL, MongoDB, and Stripe API. Achieved a groundbreaking improvement in system performance, reducing load times from 1800ms to 200ms.',
+        'Spearheaded the back-end development of a Route Optimizer application, enhancing delivery efficiency by solving up to 5000 vehicle routing problems daily with Java, Quarkus, PostgreSQL, MongoDB, and Stripe API. Achieved a groundbreaking improvement in system performance, reducing load times from 1800ms to 200ms.',
         'Persuaded the team to adopt a strategic pivot to a Product-as-a-Service (PaaS) model, fostering Routetitan’s growth by optimizing resource allocation, aligning business processes with market demands, and establishing an innovative and competitive path.',
         'Led the deployment architecture overhaul using Terraform and Gitlab CI, integrating Hetzner-Cloud, GCP, and AWS, which optimized deployment processes and significantly cut operational costs.',
         'Note:  I continued working with this company till 06/2022 as a part-time consultant.',
-      ],
-    },
-    {
-      company: 'Devolon',
-      position: 'Software Developer',
-      from: '02/2020',
-      to: '02/2021',
-      companyLink: 'https://www.devolon.fi',
-      achievements: [
-        'Engineered the PCKT children’s money management application, empowering parents with tools to monitor and control their children’s spending. Integral in leveraging ISO-8583 and jPOS for secure banking communications, facilitating seamless transaction processing.',
-        'Initiated a Grafana and Prometheus-based monitoring system, which reduced customer support calls by 80% and boosted operational efficiency by enabling rapid detection and resolution of system issues.',
-        'Collaborated within a diverse, scrum-based international team, focusing on API services and back-office management.',
       ],
     },
     {
