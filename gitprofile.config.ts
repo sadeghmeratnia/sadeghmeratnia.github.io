@@ -174,9 +174,10 @@ const CONFIG = {
       to: '10/2021',
       companyLink: 'https://routetitan.com',
       achievements: [
-        'Spearheaded the back-end development of a Route Optimizer application for DHL Netherlands, enhancing delivery efficiency by solving up to 5000 vehicle routing problems daily with Java, Quarkus, PostgreSQL, MongoDB, Stripe API, and Google-OR tools. Achieved a groundbreaking improvement in system performance, reducing load times from 1800ms to 200ms.',
+        'Spearheaded the back-end development of a Route Optimizer application for DHL Netherlands, enhancing delivery efficiency by solving up to 5000 vehicle routing problems daily with Java, Quarkus, PostgreSQL, MongoDB, and Stripe API. Achieved a groundbreaking improvement in system performance, reducing load times from 1800ms to 200ms.',
         'Persuaded the team to adopt a strategic pivot to a Product-as-a-Service (PaaS) model, fostering Routetitan’s growth by optimizing resource allocation, aligning business processes with market demands, and establishing an innovative and competitive path.',
-        ' Led the deployment architecture overhaul using Terraform and Gitlab CI, integrating Hetzner-Cloud, GCP, and AWS, which optimized deployment processes and significantly cut operational costs.',
+        'Led the deployment architecture overhaul using Terraform and Gitlab CI, integrating Hetzner-Cloud, GCP, and AWS, which optimized deployment processes and significantly cut operational costs.',
+        'Note:  I continued working with this company till 06/2022 as a part-time consultant.',
       ],
     },
     {
