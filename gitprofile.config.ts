@@ -36,7 +36,7 @@ const CONFIG = {
   },
   seo: {
     title: 'Sadegh Meratnia, Senior iOS Engineer.',
-    description: 'Explore the portfolio of Sadegh Meratnia, a Brighton-based Senior Software Engineer with over 6 years of expertise in iOS development';
+    description: 'Explore the portfolio of Sadegh Meratnia, a Brighton-based Senior Software Engineer with over 6 years of expertise in iOS development',
     imageURL: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar/main/Who-I-am.png',
     schema: {
       '@context': 'http://schema.org',
