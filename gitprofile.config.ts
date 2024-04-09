@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'msorkhpar', // Your GitHub org/user name. (This is the only required config)
+    username: 'sadeghmeratnia', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -239,7 +239,7 @@ const CONFIG = {
     limit: 0, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
-    id: 'G-RJ2GES11E6', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
