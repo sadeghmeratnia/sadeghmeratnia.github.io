@@ -155,15 +155,13 @@ const CONFIG = {
   },
   experiences: [
     {
-      company: 'Indiana State University',
-      position: 'Graduate Research Assistant',
-      from: '08/2022',
-      to: '05/2024',
-      companyLink: 'https://cs.indstate.edu',
+      company: 'StoreLab Ltd',
+      position: 'Senior iOS Developer',
+      from: '01/2024',
+      to: 'now',
+      companyLink: 'https://storelab.app',
       achievements: [
-        'Spearheaded the integration of Wikidata and Wikipedia dumps to create a comprehensive dataset for graph entity summarization, utilizing Java, Python, Neo4j, Linux, and AWS to build a new standard dataset for machine learning research in graph summarization.',
-        'Advanced an RGCN-based entity summarization algorithm in Knowledge Graphs with PyTorch and Optuna.',
-        'Developed a Mixed Integer solver for the optimal vertex ordering problem in bipartite graphs, applying Python, NetworkX, and PostgreSQL, translating complex models into practical solutions.',
+        
       ],
     },
     {
