@@ -180,12 +180,12 @@ const CONFIG = {
       position: 'iOS Developer',
       from: '10/2020',
       to: '07/2023',
-      companyLink: 'https://routetitan.com',
+      companyLink: '',
       achievements: [
-        'Spearheaded the back-end development of a Route Optimizer application, enhancing delivery efficiency by solving up to 5000 vehicle routing problems daily with Java, Quarkus, PostgreSQL, MongoDB, and Stripe API. Achieved a groundbreaking improvement in system performance, reducing load times from 1800ms to 200ms.',
-        'Persuaded the team to adopt a strategic pivot to a Product-as-a-Service (PaaS) model, fostering Routetitan’s growth by optimizing resource allocation, aligning business processes with market demands, and establishing an innovative and competitive path.',
-        'Led the deployment architecture overhaul using Terraform and Gitlab CI, integrating Hetzner-Cloud, GCP, and AWS, which optimized deployment processes and significantly cut operational costs.',
-        'Note:  I continued working with this company till 06/2022 as a part-time consultant.',
+        'Streamlined release processes, reducing each version’s time-to-market by 30 minutes through the implementation of a robust CI/CD pipeline powered by Fastlane and GitLab Runner.',
+        'Developed internal frameworks using Swift Package Manager for utilization in both Users and Chefs apps, ensuring better integrity.',
+        'Integrated Firebase push notification service to send targeted and personalized notifications to users, resulting in improved engagement and enhanced app usage by 30%.',
+        'Implemented Firebase Analytics to actively monitor user behavior, evaluate app performance, and drive data-informed decisions, leading to a notable 15% improvement in user retention strategies.'        
       ],
     },
     {
