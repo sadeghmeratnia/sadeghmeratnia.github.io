@@ -161,7 +161,7 @@ const CONFIG = {
       to: 'now',
       companyLink: 'https://storelab.app',
       achievements: [
-        'Test'
+        ''
       ],
     },
     {
