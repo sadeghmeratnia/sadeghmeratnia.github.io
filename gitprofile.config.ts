@@ -71,7 +71,7 @@ const CONFIG = {
       },
       alumniOf: {
         '@type': 'EducationalOrganization',
-        name: 'Islamic Azad University of Tehran',
+        name: 'Azad University of Tehran',
       },
       url: 'https://meratnia.me',
       image: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar/main/Who-I-am.png',
@@ -220,27 +220,10 @@ const CONFIG = {
   certifications: [],
   educations: [
     {
-      institution: 'Indiana State University',
-      degree: 'Master of Science in Computer Science',
-      from: '08/2022',
-      to: '05/2024',
-    },
-    {
-      institution: 'University of Mazandaran',
-      degree: 'Bachelor of Engineering in Information Technology',
-      from: '2012',
-      to: '2016',
-    },
-  ],
-  publications: [
-    {
-      title: 'Vertex Ordering with Precedence Constraints',
-      conferenceName: 'FCT 2023',
-      journalName: '',
-      authors: 'Jeff Kinne, Akbar Rafiey, Arash Rafiey & Mohammad Sorkhpar (alphabetical order)',
-      link: 'https://doi.org/10.1007/978-3-031-43587-4_22',
-      description:
-        'We study bipartite graph ordering problem, which arises in various domains such as production management, bioinformatics, and job scheduling with precedence constraints. In the bipartite vertex ordering problem, we are given a bipartite graph H=(B,S,E) where each vertex in B has a cost and each vertex in S has a profit. The goal is to find a minimum K together with an ordering < of the vertices of H, so that i<j whenever i∈B is adjacent to j∈S . Moreover, at each sub-order the difference between the costs and profits of the vertices in the sub-order does not exceed K.'
+      institution: 'Azad University of Tehran',
+      degree: 'Bachelor of Software Engineering',
+      from: '2017',
+      to: '2021',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
