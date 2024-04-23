@@ -37,7 +37,7 @@ const CONFIG = {
   seo: {
     title: 'Sadegh Meratnia, Senior iOS Engineer.',
     description: 'Explore the portfolio of Sadegh Meratnia, a Brighton-based Senior Software Engineer with over 6 years of expertise in iOS development',
-    imageURL: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar/main/Who-I-am.png',
+    imageURL: 'https://raw.githubusercontent.com/sadeghmeratnia/sadeghmeratnia/main/Who-i-am-new.gif',
     schema: {
       '@context': 'http://schema.org',
       '@type': 'Person',
@@ -74,7 +74,7 @@ const CONFIG = {
         name: 'Azad University of Tehran',
       },
       url: 'https://meratnia.me',
-      image: 'https://raw.githubusercontent.com/msorkhpar/msorkhpar/main/Who-I-am.png',
+      image: 'https://raw.githubusercontent.com/sadeghmeratnia/sadeghmeratnia/main/Who-i-am-new.gif',,
       sameAs: [
         'http://www.linkedin.com/in/sadeghmeratnia',
         'http://www.github.com/sadeghmeratnia',
@@ -111,7 +111,7 @@ const CONFIG = {
     email: 'sadegh@meratnia.me',
   },
   resume: {
-    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://raw.githubusercontent.com/sadeghmeratnia/sadeghmeratnia/main/Sadegh-Meratnia-Resume-v1.6.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Swift',
