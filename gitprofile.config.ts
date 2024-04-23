@@ -74,7 +74,7 @@ const CONFIG = {
         name: 'Azad University of Tehran',
       },
       url: 'https://meratnia.me',
-      image: 'https://raw.githubusercontent.com/sadeghmeratnia/sadeghmeratnia/main/Who-i-am-new.gif',,
+      image: 'https://raw.githubusercontent.com/sadeghmeratnia/sadeghmeratnia/main/Who-i-am-new.gif',
       sameAs: [
         'http://www.linkedin.com/in/sadeghmeratnia',
         'http://www.github.com/sadeghmeratnia',
