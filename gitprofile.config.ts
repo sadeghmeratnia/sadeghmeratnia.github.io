@@ -111,7 +111,7 @@ const CONFIG = {
     email: 'sadegh@meratnia.me',
   },
   resume: {
-    fileUrl: '' // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Swift',
@@ -159,6 +159,7 @@ const CONFIG = {
       position: 'Senior iOS Developer',
       from: '01/2024',
       to: 'now',
+      logo: '/logos/1.png',
       companyLink: 'https://storelab.app',
       achievements: [
         ''
@@ -169,6 +170,7 @@ const CONFIG = {
       position: 'iOS Software Engineer',
       from: '08/2023',
       to: '12/2023',
+      logo: '/logos/2.png',
       companyLink: 'https://snapp.ir',
       achievements: [
         'Converted app’s main section from PWA to native Swift, UIKit, Combine, resulting in a 95% crash-free rate.',
@@ -180,6 +182,7 @@ const CONFIG = {
       position: 'iOS Developer',
       from: '10/2020',
       to: '07/2023',
+      logo: '/logos/3.png',
       companyLink: '',
       achievements: [
         'Streamlined release processes, reducing each version’s time-to-market by 30 minutes through the implementation of a robust CI/CD pipeline powered by Fastlane and GitLab Runner.',
@@ -193,6 +196,7 @@ const CONFIG = {
       position: 'iOS Developer',
       from: '01/2018',
       to: '09/2020',
+      logo: '/logos/4.png',
       companyLink: 'https://www.farazpardazan.com',
       achievements: [
         'Redesigned the insurance application, resulting in a significant 40% surge in user engagement and interaction.',
@@ -219,8 +223,11 @@ const CONFIG = {
     username: '', // to hide blog section, keep it empty
     limit: 0, // How many articles to display. Max is 10.
   },
+  clarity: {
+    id: '', // Clarity analytics tracking id. e.g. '
+  },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: 'G-RJ2GES11E6', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
@@ -228,7 +235,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'dark',
+    defaultTheme: 'procyon',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -280,13 +287,11 @@ const CONFIG = {
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
+      primary: 'rgba(113,206,109,0.68)',
+      'base-100': 'rgba(31,31,37,0.09)',
+      'base-400': 'rgba(233,233,253,0.09)',
+      '--rounded-box': '1rem',
+      '--rounded-btn': '1rem',
     },
   },
 
