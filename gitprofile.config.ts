@@ -150,7 +150,7 @@ const CONFIG = {
     'Git',
   ],
   banner: {
-    imageURL: 'https://raw.githubusercontent.com/sadeghmeratnia/sadeghmeratnia/main/Who-I-am-new.gif',
+    imageURL: 'https://raw.githubusercontent.com/sadeghmeratnia/sadeghmeratnia/main/Who-i-am-new.gif',
     name: 'Sadegh Meratnia Portfolio',
   },
   experiences: [
